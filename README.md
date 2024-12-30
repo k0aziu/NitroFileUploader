@@ -8,6 +8,8 @@ FakeNitroUploader is a plugin designed to upload files larger than 10MB to a pri
 - Receive a link to the uploaded file.
 - Share the link easily with others.
 
+To install and configure the plugin, you can follow the steps outlined in this helpful video tutorial: [How to Install Vencord Plugins](https://www.youtube.com/watch?v=3anTy0EdvsE). Although the video is not created by me, it provides a clear and concise guide to setting up plugins.
+
 ## Server Setup
 
 The server is implemented using Node.js and Express, with the help of the `multer` library for handling file uploads. The server is configured to store uploaded files in a local directory and serve them via a static endpoint.
