@@ -14,7 +14,7 @@ To install and configure the plugin, you can follow the steps outlined in this h
 
 The server is implemented using Node.js and Express, with the help of the `multer` library for handling file uploads. The server is configured to store uploaded files in a local directory and serve them via a static endpoint.
 
-### Server Code
+## Server Code
 ```javascript
 const express = require('express');
 const multer = require('multer');
@@ -59,3 +59,5 @@ app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 ```
+
+I used ngrok for testing, and it works great.
