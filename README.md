@@ -13,7 +13,7 @@ FakeNitroUploader is a plugin designed to upload files larger than 10MB to a pri
 The server is implemented using Node.js and Express, with the help of the `multer` library for handling file uploads. The server is configured to store uploaded files in a local directory and serve them via a static endpoint.
 
 ### Server Code
-```
+```javascript
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
@@ -41,10 +41,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Endpoint do przesyłania plików
 app.post('/upload', upload.single('file'), (req, res) => {
     if (!req.file) {
-        return res.status(400).json({ error: 'Brak pliku do przesłania.' });
+        return res.status(400).json({ error: 'No file to upload.' });
     }
 
     const fileLink = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
@@ -52,10 +51,9 @@ app.post('/upload', upload.single('file'), (req, res) => {
     res.status(200).json({ fileLink: fileLink, fileName: req.file.originalname, fileSize: req.file.size });
 });
 
-// Endpoint do pobierania plików
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.listen(port, () => {
-    console.log(`Serwer działa na porcie ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
 ```
