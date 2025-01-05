@@ -129,7 +129,6 @@ async function uploadFileToServer(file, endpoint) {
     }
 }
 
-
 export default definePlugin({
     name: "FakeNitroUploader",
     description: "Uploads files > 10MB to a server and returns a link to them.",
