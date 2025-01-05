@@ -62,6 +62,6 @@ app.listen(port, () => {
 
 Running the server with ngrok should look like this:
 
-![](https://github.com/k0aziu/NitroFileUploader/raw/refs/heads/main/tutor.gif)
+![](https://github.com/k0aziu/NitroFileUploader/raw/refs/heads/main/tutor.mp4)
 
 I used ngrok for testing, and it works great.
