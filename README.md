@@ -1,4 +1,4 @@
-# FakeNitroUploader Vencord Plugin
+# NitroFileUploader Vencord Plugin
 
 FakeNitroUploader is a Vencord plugin designed to upload files larger than 10MB to a private server and return a link to the uploaded file. This allows users to bypass file size limitations in certain applications by sharing a link instead of the file itself.
 
