@@ -14,8 +14,6 @@ To install and configure the plugin, you can follow the steps outlined in this h
 
 The server is implemented using Node.js and Express, with the help of the `multer` library for handling file uploads. The server is configured to store uploaded files in a local directory and serve them via a static endpoint.
 
-## Install Sample Server
-
 In the `server` folder, you can find a sample server implementation. Install the dependencies with `yarn install` or `npm install` and run the server with `node server.js`. In new terminal, run `ngrok http 8080` to start the ngrok server. Copy link provided by ngrok and paste it in the `serverUrl` variable in the plugin settings.
 
 If the file is very large, uploading it may take a few seconds. Please be patient.
